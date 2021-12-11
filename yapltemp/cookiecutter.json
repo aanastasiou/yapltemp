@@ -1,0 +1,12 @@
+{
+    "plugin_name": "generic_plugin",
+    "author_name": "YASARA Plugin Author Name",
+    "author_email": "author@domain.org",
+    "version": "0.0.1",
+    "yasara_plugin_title": "Generic Plugin",
+    "yasara_plugin_topic": "Utilities",
+    "yasara_plugin_license": "GPL",
+    "yasara_plugin_description": "This is a generic YASARA plugin template",
+    "yasara_plugin_platforms": "Windows, Linux, MacOS"
+}
+
