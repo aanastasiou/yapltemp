@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# An elementary YASARA plugin installer
+# Generic YASARA plugin installer (Linux version)
 #
 # Athanasios Anastasiou, Dec 2021
 
@@ -39,24 +39,24 @@ if [ -f "${YASARA_HOME}"/plg/{{cookiecutter.plugin_name}}.py ]; then
     echo "run uninstal_plugin.sh, first, followed by install_plugin.sh."
     echo
     exit 1
-else
-    # Everything looks good, go ahead with the installation in /plg
-    cp {{cookiecutter.plugin_name}}/{{cookiecutter.plugin_name}}.py ${YASARA_HOME}/plg
-    # BEGIN - COPY ADDITIONAL FILES
-    #
-	# ADDITIONAL FILES THAT SHOULD EXIST WITHIN 
-    # <YASARA_HOME>/plg, SHOULD BE COPIED HERE.
-    #
-    # END - COPY ADDITIONAL FILES
-    # 
-    # Inform and exit
-    echo "The plugin was succesfully installed"
-    echo
-    echo "Please note that this installer installs ONLY the Python plugin file ({{cookiecutter.plugin_name}}.py)"
-    echo "to your YASARA installation (at ${YASARA_HOME})."
-    echo
-    echo "If additional files are required by the plugin, you will have to extend the installer to include them."
-    echo "To do that, open the file install_plugin.sh and follow the inline comments".
-    echo
 fi
+
+# Everything looks good, go ahead with the installation in /plg
+cp {{cookiecutter.plugin_name}}/{{cookiecutter.plugin_name}}.py ${YASARA_HOME}/plg
+# BEGIN - COPY ADDITIONAL FILES
+#
+# ADDITIONAL FILES THAT SHOULD EXIST WITHIN 
+# <YASARA_HOME>/plg, SHOULD BE COPIED HERE.
+#
+# END - COPY ADDITIONAL FILES
+# 
+# Inform and exit
+echo "The plugin was succesfully installed"
+echo
+echo "Please note that this installer installs ONLY the Python plugin file ({{cookiecutter.plugin_name}}.py)"
+echo "to your YASARA installation (at ${YASARA_HOME})."
+echo
+echo "If additional files are required by the plugin, you will have to extend the installer to include them."
+echo "To do that, open the file install_plugin.sh and follow the inline comments".
+echo
 
