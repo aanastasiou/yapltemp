@@ -9,10 +9,20 @@
 {{welcome_message}}
 {{welcome_underline}}
 
+{{cookiecutter.yasara_plugin_description}}.
+
+For {{cookiecutter.yasara_plugin_platforms}}, licensed under {{cookiecutter.yasara_plugin_license}}
+
+{{cookiecutter.author_name}}
+
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   installation
+   api
 
 
 
