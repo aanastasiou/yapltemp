@@ -2,7 +2,7 @@
 Installation
 ============
 
-The root directory of "{{%cookiecutter.plugin_name%}}" includes two scripts that handle installation and removal of the plugin.
+The root directory of "{{cookiecutter.plugin_name}}" includes two scripts that handle installation and removal of the plugin.
 
 * ``install_plugin``
 * ``uninstall_plugin``
