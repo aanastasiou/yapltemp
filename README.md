@@ -24,12 +24,20 @@ For more details about cookiecutter please see [here](https://github.com/cookiec
 
 ## Usage
 
-To create the plugin scaffold, simply run...
+To create the plugin scaffold, simply run cookiecutter, grabbing the latest release from this repository:
 
+
+```
+    > cookiecutter https://github.com/aanastasiou/yapltemp/releases/latest/download/yapltemp.zip
+```
+
+Or, similarly, if you have git installed:
 
 ```
     > cookiecutter https://github.com/aanastasiou/yapltemp.git
 ```
 
-...and fill in the requested information.
+Cookiecutter will then ask you a number of questions to customise your plugin template and generate 
+the initial scaffold.
+
 
