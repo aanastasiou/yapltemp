@@ -2,6 +2,8 @@
 
 A cookiecutter template to kickstart [YASARA](http://www.yasara.org/) plugin development.
 
+![frontpage](https://raw.githubusercontent.com/aanastasiou/yapltemp/main/image_frontpage.png)
+
 It creates the basic structure of a YASARA Python plugin, complete with:
 
 * Install / uninstall scripts for Linux and Windows 
