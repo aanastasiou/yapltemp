@@ -25,11 +25,12 @@ def {{cookiecutter.plugin_name}}_plugin_check_if_disabled():
     Checks if the plugin can be accessible in a given environment.
 
     Notes:
-        * To inform yasara that your plugin should NOT launch, assign
-          a 1 to yasara.plugin.exitcode.
+        * To inform yasara that your plugin should NOT launch, return 1
+          from this function. For the plugin to launch, this function should
+          return a 0.
         * The default implementation simply allows the plugin to load.
     """
-    pass
+    return 0
 
 
 def {{cookiecutter.plugin_name}}_plugin_launch(plugin_request):
@@ -47,7 +48,7 @@ def {{cookiecutter.plugin_name}}_plugin_launch(plugin_request):
 
 if __name__ == "__main__":
     if yasara.request == "CheckIfDisabled":
-        {{cookiecutter.plugin_name}}_plugin_check_if_disabled()
+        yasara.plugin.exitcode = {{cookiecutter.plugin_name}}_plugin_check_if_disabled()
     else:
         {{cookiecutter.plugin_name}}_plugin_launch(yasara.request)
     yasara.plugin.end()

@@ -36,6 +36,7 @@ if [ ! -f "${YASARA_HOME}"/plg/{{cookiecutter.plugin_name}}.py ]; then
     echo "No further action was taken."
     echo     
     exit 1
+fi
 
 # The file exists, proceed to delete it
 rm ${YASARA_HOME}/plg/{{cookiecutter.plugin_name}}.py
